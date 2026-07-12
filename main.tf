@@ -1,5 +1,5 @@
 module "vpc" {
-  source               = "git::https://github.com/Matishac14/ETF-IAC-II-AUY1105-MODULE.git//modules/vpc?ref=main"
+  source               = "git::https://github.com/Matishac14/ETF-IAC-II-AUY1105-MODULE.git//modules/vpc?ref=v1.1.0"
   project_name         = var.project_name
   environment          = var.environment
   vpc_cidr             = var.vpc_cidr
@@ -26,7 +26,7 @@ resource "aws_security_group" "ssm_sg" {
 }
 
 module "ec2" {
-  source             = "git::https://github.com/Matishac14/ETF-IAC-II-AUY1105-MODULE.git//modules/ec2?ref=main"
+  source             = "git::https://github.com/Matishac14/ETF-IAC-II-AUY1105-MODULE.git//modules/ec2?ref=v1.1.0"
   project_name       = var.project_name
   environment        = var.environment
   purpose            = var.ec2_purpose
@@ -37,7 +37,7 @@ module "ec2" {
 }
 
 module "s3" {
-  source       = "git::https://github.com/Matishac14/ETF-IAC-II-AUY1105-MODULE.git//modules/s3?ref=main"
+  source       = "git::https://github.com/Matishac14/ETF-IAC-II-AUY1105-MODULE.git//modules/s3?ref=v1.1.0"
   project_name = var.project_name
   environment  = var.environment
   bucket_name  = var.bucket_name
