@@ -107,8 +107,16 @@ ETF-IAC-II-AUY1105/
 ├── release-please-config.json
 ├── terraform.tfvars.example
 └── variables.tf
-
 ```
+# Evidencias de validaciones locales y pipeline
+Terraform Plan
+![terraform_plan.png](imgs/terraform_plan.png)
+Terraform Apply
+![tf_apply.png](imgs/tf_apply.png)
+Outputs
+![outputs.png](imgs/outputs.png)
+All_workflows
+![all_workflow.png](imgs/all_workflow.png)
 # Referencia repos originales con validaciones de PR manuales
 - Modulo Orquestador EV1 y EV2: https://github.com/AUY1105-II/AUY1105-Grupo-4
 - Modulo Orquestador EV3: https://github.com/Matishac14/AUY1105-Grupo-4
